@@ -32,6 +32,7 @@ AUTH_USER_MODEL = 'storefront.User'
 # Application definition
 
 INSTALLED_APPS = [
+    'storefront.apps.StorefrontConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -68,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-LOGIN_REDIRECT_URL = "home"
+LOGIN_REDIRECT_URL = 'product_table'
 LOGOUT_REDIRECT_URL = "home"
 
 WSGI_APPLICATION = 'django_project.wsgi.application'

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2>List of Products</h2>
+<table border="1" width="600">
+    <tr>
+    <td>Name</td>
+    <td>Description</td>
+    <td>Price</td>
+    </tr>
+    {% for product in allProducts %}
+        <tr>
+        <td>{{ product.name }}</td>
+        <td>{{ product.description }}</td>
+        <td>${{ product.price }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
