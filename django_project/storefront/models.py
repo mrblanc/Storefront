@@ -10,9 +10,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-# Allows us to extend the default user later, should we choose to. 
-# Per Django documentation, this is very difficult to do after
-# initial migration
-class User(AbstractUser):
-    pass
