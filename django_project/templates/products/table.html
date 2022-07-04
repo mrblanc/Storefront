@@ -18,5 +18,7 @@
         </tr>
     {% endfor %}
 </table>
+{% if perms.storefront.add_product %}
 <button onclick="location.href = '/storefront/add_product'">Add Product</button>
+{% endif %}
 {% endblock %}
