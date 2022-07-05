@@ -16,13 +16,21 @@ A Linux machine running Docker >= 20.0 and docker-compose >= 2.0. Earlier versio
 
 ### Accessing the storefront
 
-Once the above docker-compose command has been run, the storefront can be accessed in a browser from `https://127.0.0.1:8000/`.
+Once the above docker compose command has been run, the storefront can be accessed in a browser from `https://127.0.0.1:8000/`.
 
 ### Adding users
 
 A convienience script called `add_users.sh` has been added to allow bulk adding of users. Run `add_users.sh <config-file>`. A sample config file has been provided in `sample_configs/users.csv`. To use the sample config in:
 
 `add_users.sh sample_configs/users.csv`.
+
+### Shutting down the server
+
+To shut down the server, run `docker compose down`.
+
+### Running tests
+
+To run tests, navigate to `django_project`, and run the command `python manage.py test`.
 
 ## Limitations
 
