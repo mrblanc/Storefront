@@ -16,7 +16,7 @@ A Linux machine running Docker >= 20.0 and docker-compose >= 2.0. Earlier versio
 
 ### Accessing the storefront
 
-Once the above docker compose command has been run, the storefront can be accessed in a browser from `https://127.0.0.1:8000/`.
+Once the above docker compose command has been run, the storefront can be accessed in a browser from `https://localhost:8000/`.
 
 ### Adding users
 
